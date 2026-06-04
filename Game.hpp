@@ -6,26 +6,17 @@
 class Game {
 private:
     std::string title;
-    std::string description;
+    std::string shortDescription;
     int popularity;
 
 public:
-    Game()
-    }
-    Game(std::string t, std::string d, int p) {
-        this->title = t;
-        this->description = d;
-        this->popularity = p;
-    }
-    string getTitle() const {
-        return title;
-    }
-    string getDescription() const {
-        return description;
-    }
-    int getPopularity() const {
-        return popularity;
-    }
+    Game();
+    Game(std::string t, std::string d, int p);
+    std::string getTitle();
+    std::string getShortDescription();
+    int getPopularity();
+
+    ~Game() = default;
 
     
 };
