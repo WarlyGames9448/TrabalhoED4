@@ -4,16 +4,30 @@
 #include <string>
 
 class Game {
-public:
+private:
     std::string title;
     std::string description;
     int popularity;
 
+public:
+    Game()
+    }
     Game(std::string t, std::string d, int p) {
         this->title = t;
         this->description = d;
         this->popularity = p;
     }
+    string getTitle() const {
+        return title;
+    }
+    string getDescription() const {
+        return description;
+    }
+    int getPopularity() const {
+        return popularity;
+    }
+
+    
 };
 
 #endif
