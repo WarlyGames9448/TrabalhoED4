@@ -23,7 +23,7 @@ int main() {
     std::cout << "Busca 'Team Fortress 2' -> retorno: " << trie.contains("Team Fortress 2") << "\n";
     std::cout << "Busca 'Half Life 2' -> retorno: " << trie.contains("Half Life") << "\n";
 
-    // retorno
+    // retorno 0
     std::cout << "\nBusca 'bomba patch 100percent atualizado geomatrix'  -> retorno: " << trie.contains("'bomba patch 100percent atualizado geomatrix") << "\n";
     std::cout << "Busca 'Had' -> retorno: " << trie.contains("Had") << "\n";
 
