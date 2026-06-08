@@ -1,17 +1,27 @@
 #include "Game.hpp"
 
-Game();
-Game(std::string t, std::string d, int p) {
+Game::Game() {
+    title = "";
+    shortDescription = "";
+    popularity = 0;
+}
+
+Game::Game(std::string t, std::string d, int p) {
     this->title = t;
     this->shortDescription = d;
     this->popularity = p;
 }
-std::string Game::getTitle() const {
+
+Game::~Game() {}
+
+std::string Game::getTitle() {
     return title;
 }
-std::string Game::getShortDescription() const {
+
+std::string Game::getShortDescription() {
     return shortDescription;
 }
-int Game::getPopularity() const {
+
+int Game::getPopularity() {
     return popularity;
 }

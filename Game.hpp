@@ -11,14 +11,12 @@ private:
 
 public:
     Game();
-    Game(std::string t, std::string d, int p);
+    Game(std::string title, std::string shortDescription, int popularity);
+    ~Game();
+
     std::string getTitle();
     std::string getShortDescription();
     int getPopularity();
-
-    ~Game() = default;
-
-    
 };
 
 #endif
